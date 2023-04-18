@@ -1,4 +1,4 @@
-# project_test
+# Example
 
 An example of NestedScrollView allowing sync multiple ScrollController.
 
