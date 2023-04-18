@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DefaultPhysics extends StatelessWidget {
-  const DefaultPhysics({super.key});
+class DefaultPhysicsWithoutController extends StatelessWidget {
+  const DefaultPhysicsWithoutController({super.key});
 
   @override
   Widget build(BuildContext context) {

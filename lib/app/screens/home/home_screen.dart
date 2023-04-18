@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'tab_bar/custom_physics_with_controller.dart';
-import 'tab_bar/default_physics.dart';
+import 'tab_bar/default_physics_without_controller.dart';
 import 'tab_bar/default_physics_with_controller.dart';
 import 'widgets/custom_tab_bar.dart';
 
@@ -35,12 +35,12 @@ class _HomeScreenState extends State<HomeScreen> {
         body: CustomTabBar(
           lenght: 3,
           names: const [
-            "Default Physics",
+            "Default Physics without Controller",
             "Default Physics with Controller",
             "Custom Physics with Controller",
           ],
           children: [
-            const DefaultPhysics(),
+            const DefaultPhysicsWithoutController(),
             const DefaultPhysicsWithController(),
             CustomPhysicsWithController(controller: _nestedController),
           ],
