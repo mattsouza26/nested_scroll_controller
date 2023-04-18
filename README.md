@@ -27,7 +27,7 @@ class NestedScrollControllerPhysics extends ScrollPhysics {
   @override
   double applyPhysicsToUserOffset(ScrollMetrics position, double offset) {
     if (parentController == null) {
-      return offset;
+      return super.applyPhysicsToUserOffset(position, offset);
     }
 
     final double scrollPixels = position.pixels;
