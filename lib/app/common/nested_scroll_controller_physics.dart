@@ -11,7 +11,7 @@ class NestedScrollControllerPhysics extends ScrollPhysics {
 
   @override
   double applyPhysicsToUserOffset(ScrollMetrics position, double offset) {
-    if (parentController == null) {
+    if (parentController == null || !parentController!.hasClients) {
       return super.applyPhysicsToUserOffset(position, offset);
     }
 
@@ -30,7 +30,7 @@ class NestedScrollControllerPhysics extends ScrollPhysics {
 
   @override
   double applyBoundaryConditions(ScrollMetrics position, double value) {
-    if (parentController == null) {
+    if (parentController == null || !parentController!.hasClients) {
       return super.applyBoundaryConditions(position, value);
     }
 
